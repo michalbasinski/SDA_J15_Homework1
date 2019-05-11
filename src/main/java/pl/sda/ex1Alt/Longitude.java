@@ -1,11 +1,17 @@
-package pl.sda.ex1;
+package pl.sda.ex1Alt;
 
 import java.util.Objects;
 
-class Latitude {
+class Longitude {
     private Integer degree;
     private Integer minutes;
     private Integer seconds;
+
+    Longitude(Integer degree, Integer minutes, Integer seconds) {
+        this.degree = degree;
+        this.minutes = minutes;
+        this.seconds = seconds;
+    }
 
     Integer getDegree() {
         return degree;
@@ -35,10 +41,10 @@ class Latitude {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Latitude latitude = (Latitude) o;
-        return Objects.equals(degree, latitude.degree) &&
-                Objects.equals(minutes, latitude.minutes) &&
-                Objects.equals(seconds, latitude.seconds);
+        Longitude longitude = (Longitude) o;
+        return Objects.equals(degree, longitude.degree) &&
+                Objects.equals(minutes, longitude.minutes) &&
+                Objects.equals(seconds, longitude.seconds);
     }
 
     @Override

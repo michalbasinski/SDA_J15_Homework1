@@ -2,32 +2,32 @@ package pl.sda.ex1;
 
 import java.util.Objects;
 
-public class Longitude {
+class Longitude {
     private Integer degree;
     private Integer minutes;
     private Integer seconds;
 
-    public Integer getDegree() {
+    Integer getDegree() {
         return degree;
     }
 
-    public void setDegree(Integer degree) {
+    void setDegree(Integer degree) {
         this.degree = degree;
     }
 
-    public Integer getMinutes() {
+    Integer getMinutes() {
         return minutes;
     }
 
-    public void setMinutes(Integer minutes) {
+    void setMinutes(Integer minutes) {
         this.minutes = minutes;
     }
 
-    public Integer getSeconds() {
+    Integer getSeconds() {
         return seconds;
     }
 
-    public void setSeconds(Integer seconds) {
+    void setSeconds(Integer seconds) {
         this.seconds = seconds;
     }
 

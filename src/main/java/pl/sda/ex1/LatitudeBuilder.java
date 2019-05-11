@@ -1,29 +1,29 @@
 package pl.sda.ex1;
 
-public class LatitudeBuilder {
+class LatitudeBuilder {
 
     private Latitude latitude;
 
-    public LatitudeBuilder() {
+    LatitudeBuilder() {
         latitude = new Latitude();
     }
 
-    public LatitudeBuilder withDegrees(Integer degrees) {
+    LatitudeBuilder withDegrees(Integer degrees) {
         latitude.setDegree(degrees);
         return this;
     }
 
-    public LatitudeBuilder withMinutes(Integer minutes) {
+    LatitudeBuilder withMinutes(Integer minutes) {
         latitude.setMinutes(minutes);
         return this;
     }
 
-    public  LatitudeBuilder withSeconds(Integer seconds) {
+    LatitudeBuilder withSeconds(Integer seconds) {
         latitude.setSeconds(seconds);
         return this;
     }
 
-    public Latitude build() {
+    Latitude build() {
         return latitude;
     }
 

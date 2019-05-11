@@ -1,4 +1,4 @@
-package pl.sda.ex1;
+package pl.sda.ex1Alt;
 
 import java.time.LocalDate;
 
@@ -6,9 +6,18 @@ class Summit {
     private String name;
     private Integer height;
     private Longitude longitude;
-    private Latitude  latitude;
+    private Latitude latitude;
     private LocalDate firstSummerAscent;
     private LocalDate firstWinterAscent;
+
+    Summit(String name, Integer height, Longitude longitude, Latitude latitude, LocalDate firstSummerAscent, LocalDate firstWinterAscent) {
+        this.name = name;
+        this.height = height;
+        this.longitude = longitude;
+        this.latitude = latitude;
+        this.firstSummerAscent = firstSummerAscent;
+        this.firstWinterAscent = firstWinterAscent;
+    }
 
     String getName() {
         return name;

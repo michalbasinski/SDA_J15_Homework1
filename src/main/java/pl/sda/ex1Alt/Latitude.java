@@ -1,4 +1,4 @@
-package pl.sda.ex1;
+package pl.sda.ex1Alt;
 
 import java.util.Objects;
 
@@ -6,6 +6,12 @@ class Latitude {
     private Integer degree;
     private Integer minutes;
     private Integer seconds;
+
+    Latitude(Integer degree, Integer minutes, Integer seconds) {
+        this.degree = degree;
+        this.minutes = minutes;
+        this.seconds = seconds;
+    }
 
     Integer getDegree() {
         return degree;

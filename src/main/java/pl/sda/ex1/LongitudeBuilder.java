@@ -1,29 +1,29 @@
 package pl.sda.ex1;
 
-public class LongitudeBuilder {
+class LongitudeBuilder {
 
     private Longitude longitude;
 
-    public LongitudeBuilder() {
+    LongitudeBuilder() {
         longitude = new Longitude();
     }
 
-    public LongitudeBuilder withDegrees(Integer degrees) {
+    LongitudeBuilder withDegrees(Integer degrees) {
         longitude.setDegree(degrees);
         return this;
     }
 
-    public LongitudeBuilder withMinutes(Integer minutes) {
+    LongitudeBuilder withMinutes(Integer minutes) {
         longitude.setMinutes(minutes);
         return this;
     }
 
-    public LongitudeBuilder withSeconds(Integer seconds) {
+    LongitudeBuilder withSeconds(Integer seconds) {
         longitude.setSeconds(seconds);
         return this;
     }
 
-    public Longitude build() {
+    Longitude build() {
         return longitude;
     }
 }
