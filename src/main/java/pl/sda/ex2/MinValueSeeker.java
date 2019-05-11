@@ -2,21 +2,23 @@ package pl.sda.ex2;
 
 import java.util.List;
 
-public class MaxValueSeeker implements ValueSeeker {
+public class MinValueSeeker implements ValueSeeker {
 
     @Override
     public Integer find(List<Integer> values) {
+
         InputValidator validator = new InputValidator();
         validator.validate(values);
 
-        Integer max = Integer.MIN_VALUE;
+        Integer min = Integer.MAX_VALUE;
 
         for (Integer value : values) {
-            if (value > max) {
-                max = value;
+            if (value < min) {
+                min = value;
             }
         }
 
-        return max;
+        return min;
     }
+
 }
