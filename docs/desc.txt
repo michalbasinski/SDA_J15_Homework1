@@ -1,0 +1,5 @@
+W projekcie znajdują się implementacje rozwiązań zadań opisanych w pliku zadania.pdf.
+Pakiety są zorganizowane w sposób odpowiadający zadaniom:
+pl.sda.ex1 - rozwiązania zadania 1 z wykorzystaniem builderów,
+pl.sda.ex1Alt - alternatywne podejście do problemu poruszanego przez zadanie nr 1 z wykorzystaniem konstruktorów zamiast builderów,
+pl.sda.ex2 - implementacja zadania 2
