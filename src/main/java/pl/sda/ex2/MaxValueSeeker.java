@@ -2,7 +2,7 @@ package pl.sda.ex2;
 
 import java.util.List;
 
-public class MaxValueSeeker implements ValueSeeker {
+class MaxValueSeeker implements ValueSeeker {
 
     @Override
     public Integer find(List<Integer> values) {

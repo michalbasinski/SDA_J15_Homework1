@@ -2,7 +2,7 @@ package pl.sda.ex2;
 
 import java.util.List;
 
-public class MinValueSeeker implements ValueSeeker {
+class MinValueSeeker implements ValueSeeker {
 
     @Override
     public Integer find(List<Integer> values) {
